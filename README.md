@@ -1,1 +1,1 @@
-# C-PRJ-HotelManegement
+# C-HotelManagementSystem
