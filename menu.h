@@ -2,7 +2,8 @@
 #define MENU_H
 
 // Exibe o menu principal com as opções disponíveis.
-void exibir_menu();
+//void exibir_menu();
+int exibir_menu(void);
 
 // Lê a opção escolhida pelo utilizador e retorna o valor.
 int obter_opcao();

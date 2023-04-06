@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "menu.h"
 
 // Define a instrução para limpar a tela de acordo com o sistema operacional.
@@ -21,7 +22,7 @@ void exibir_cabecalho() {
 }
 
 // Exibe o menu principal com as opções disponíveis.
-void exibir_menu() {
+int exibir_menu() {
     limpar_tela();
     exibir_cabecalho();
     printf("\nMenu de opções:\n");
@@ -32,6 +33,11 @@ void exibir_menu() {
     printf("5. Recomendar hotel\n");
     printf("6. Exportar dados\n");
     printf("0. Sair\n");
+
+    int opcao;
+    scanf("%d", &opcao);
+    return opcao;
+
 }
 
 // Lê a opção escolhida pelo utilizador e retorna o valor.
